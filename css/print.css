@@ -1,0 +1,41 @@
+@media print {
+    body {
+        background: none;
+    }
+    body * {
+        visibility: hidden;
+    }
+    .print-area * {
+        visibility: visible;
+        -webkit-print-color-adjust: exact !important;
+        /* Chrome, Safari 6 – 15.3, Edge */
+        print-color-adjust: exact !important;
+        /* Firefox 97+, Safari 15.4+ */
+    }
+    .print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.bt {
+    border-top: solid 1px #000;
+}
+
+.bl {
+    border-left: solid 1px #000;
+}
+
+.br {
+    border-right: solid 1px #000;
+}
+
+.bb {
+    border-bottom: solid 1px #000;
+}
+
+@page {
+    size: A4 !important;
+    margin-top: 25px !important;
+}
